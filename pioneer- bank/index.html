@@ -101,15 +101,14 @@ const btn_login=document.getElementById('button-id');
   const depositNumber=parseFloat(depositAmount) ;   
 
   
-//   const currentDeposit=document.getElementById("currentDeposit").innerText;
-//   const currentDepositNumber=parseFloat(currentDeposit);
-//   const totalDeposit=depositNumber+currentDepositNumber;
-//   document.getElementById("currentDeposit").innerText=totalDeposit;
+  const currentDeposit=document.getElementById("currentDeposit").innerText;
+  const currentDepositNumber=parseFloat(currentDeposit);
+  const totalDeposit=depositNumber+currentDepositNumber;
+  document.getElementById("currentDeposit").innerText=totalDeposit;
   
   updateSpanText("currentDeposit", depositNumber);
   updateSpanText("currentBalance",depositNumber);
   document.getElementById("depositAmount").value="";
-  })
 
   function updateSpanText(id,depositNumber){
   
@@ -129,7 +128,7 @@ const btn_login=document.getElementById('button-id');
 
 
 
-   
+      })
  
 
 </script>
